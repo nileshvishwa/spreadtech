@@ -3,29 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Registration Page</title>
 </head>
 <body>
-    <div class="regi">
-    <h1>Registration Now</h1>
-    </div>
-    <div class="form1">
-    <form>
-        <input type="text" required>
-        <label>First Name</label>
-        <input type="text" required>
-        <label>Last Name</label>
-        <input type="email" required>
-        <label>E-mail</label>
-        <input type="password" required>
-        <label>Password</label>
-        <div class="pass">
-        <input type="submit" value="Signup">
+        <div class="wrapper">
+            <form action="">
+                <h1>Registration</h1>
+                <div class="inputbox">
+                    <div class="inputfield">
+                        <input type="text" placeholder="full Name" required>
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <div class="inputfield">
+                        <input type="text" placeholder="Username" required>
+                        <i class='bx bxs-user'></i>
+                    </div>
+                </div>
+                <div class="inputbox">
+                    <div class="inputfield">
+                        <input type="email" placeholder="Email" required>
+                        <i class='bx bxl-gmail'></i>
+                    </div>
+                    <div class="inputfield">
+                        <input type="number" placeholder="Phone Number" required>
+                        <i class='bx bx-phone' ></i>
+                    </div>
+                </div>
+                <div class="inputbox">
+                    <div class="inputfield">
+                        <input type="password" placeholder="Password" required>
+                        <i class='bx bxs-lock-alt' ></i>
+                    </div>
+                    <div class="inputfield">
+                        <input type="password" placeholder="Confirm Password" required>
+                        <i class='bx bxs-lock-alt' ></i>
+                    </div>
+                </div>
+            </form>
         </div>
-    </form>
-</div>
-
-
 </body>
 </html>
