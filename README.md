@@ -1,4 +1,4 @@
-# spreadTech
+# spreadtech
 
 
 Task- 1
