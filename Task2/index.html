@@ -13,39 +13,41 @@
                 <h1>Registration</h1>
                 <div class="inputbox">
                     <div class="inputfield">
-                        <input type="text" placeholder="full Name" required>
                         <i class='bx bxs-user'></i>
+                        <input id="fname" type="text" placeholder="First" required>
                     </div>
                     <div class="inputfield">
-                        <input type="text" placeholder="Username" required>
+                        <input id="lname" type="text" placeholder="Lastname" required>
                         <i class='bx bxs-user'></i>
                     </div>
                 </div>
                 <div class="inputbox">
                     <div class="inputfield">
-                        <input type="email" placeholder="Email" required>
+                        <input id="email" type="email" placeholder="Email" required>
                         <i class='bx bxl-gmail'></i>
                     </div>
                     <div class="inputfield">
-                        <input type="number" placeholder="Phone Number" required>
+                        <input id="phnumber" type="number" placeholder="Phone Number" required>
                         <i class='bx bx-phone' ></i>
                     </div>
                 </div>
                 <div class="inputbox">
                     <div class="inputfield">
-                        <input type="password" placeholder="Password" required>
+                        <input id="pass" type="password" placeholder="Password" required>
                         <i class='bx bxs-lock-alt' ></i>
                     </div>
                     <div class="inputfield">
-                        <input type="password" placeholder="Confirm Password" required>
+                        <input id="cpass" type="password" placeholder="Confirm Password" required>
                         <i class='bx bxs-lock-alt' ></i>
                     </div>
                 </div>
 
                 <label><input type="checkbox">I hereby declare that the aboce information provided is true and correct</label>
                 
-                <button type="submit" class="button">Register</button>
+                <button id="btn_submit" type="submit" class="button">Register</button>
             </form>
         </div>
+
+<script src="./script.js"></script>
 </body>
 </html>
