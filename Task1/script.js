@@ -11,23 +11,23 @@ btnSubmit.addEventListener("click", (e) => {
     email.value = email.value.trim()
     password.value = password.value.trim()
 
-    if(!email.value)
+    if (!email.value)
         return alert("Please fill email field!");
-    
-    if(!isEmail(email.value))
-    return alert("Invalid email please try again!");
 
-    if(!password.value)
-    return alert("Please fill password field!")
+    if (!isEmail(email.value))
+        return alert("Invalid email please try again!");
+
+    if (!password.value)
+        return alert("Please fill password field!")
 
 
-    if(email.value == "nilesh@gmail.com" && password.value == "nilesh")
-    {
-        alert("Log in successfull!")
+    const user = JSON.parse(localStorage.getItem("user"));
+
+    if (email.value === user.email && dcodeIO.bcrypt.compareSync(password.value, user.password)) {
+        return alert("Log in successfull!")
     }
-    else
-    {
-        alert("Login Id/Password is Incorrect!");
+    else {
+        return alert("Login Id/Password is Incorrect!");
     }
 
 
@@ -36,4 +36,4 @@ btnSubmit.addEventListener("click", (e) => {
 function isEmail(email) {
     var reg = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return reg.test(email);
- }
+}
